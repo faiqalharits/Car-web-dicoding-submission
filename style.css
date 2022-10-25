@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Rubik:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top, #111, rgba(255, 255, 255, 0.734));
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav img {
+    width: 90px;
+    margin-left: 30px;
+}
+
+.icon {
+    margin: 25px;
+    margin-left: 4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: #222;
+    z-index: 99999;
+    /* background: linear-gradient(to bottom, #222, #fff); */
+}
+
+nav ul {
+    display: flex;
+    margin: 45px;
+}
+
+.nav-header ul li {
+    margin-right: 45px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    background-color: pink;
+    height: 3px;
+    width: 0;
+    transition: 0.3s;
+    left: 0;
+    bottom: 10px;
+}
+
+a:hover{
+    color: #fff;
+}
+
+a:hover ::after{
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+}
+
+.text {
+    width: 40%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    font-family: 'Poppins';
+    font-size: 35px;
+}
+
+.text p {
+    font-size: 20px;
+    font-family: 'Nunito';
+    margin-left: 5px;
+}
+
+.text a {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: 'Nunito';
+    border: 3px solid black;
+    padding: 8px 22px;
+    border-radius: 10px;
+    transition: 0.9s;
+    color: black;
+}
+
+.text a:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.image img {
+    width: 50rem;
+}
+
+#about {
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about img {
+    width: 40%;
+    border-radius: 30px;
+}
+
+#product {
+    height: 100vh;
+    background: linear-gradient(to right #333 #fff);
+}
+
+#profile {
+    height: 100vh;
+    background: #fff;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.desc {
+    width: 40%;
+    margin-left: 10%;
+    font-family: 'Nunito';
+    font-size: 25px;
+}
+
+.desc p {
+    font-size: 19px;
+}
+
+.product {
+    font-family: 'Poppins';
+    width: 100vw;
+    height: 100vh;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product p {
+    font-family: "Nunito";
+    font-size: 15px;
+}
+
+.rest-card {
+    gap: 3rem;
+    width: 80%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 300px 300px;
+}
+
+.card {
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #333;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid cornsilk;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    z-index: 0;
+    inset: 60% 0 0 0;
+    border-radius: 0 0 17.5px 17.5px;
+}
+
+.card:nth-child(1) {
+    background-image: url(/images/0x0.jpeg);
+}
+
+.card:nth-child(2) {
+    background-image: url(https://cdn.motor1.com/images/mgl/gZQWo/s1/nissan-gt-r-t-spec.jpg);
+}
+
+.card:nth-child(3) {
+    background-image: url(https://www.autocar.co.uk/sites/autocar.co.uk/files/range-rover-2022-001-tracking-front.jpg);
+}
+
+.card:nth-child(4) {
+    background-image: url(https://cdn.motor1.com/images/mgl/jLvJ1/s1/4x3/ein-camaro-zl1-mit-uber-1000-ps.webp);
+}
+
+.card:nth-child(5) {
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/new-ghost-white-fr-3-4-1-1598911711.jpg);
+}
+
+.card:nth-child(6) {
+    background-image: url(https://content-images.carmax.com/qeontfmijmzv/MY19MKj0XutK084z874jt/9632621fd8464b5c0e54a9dee64ad4e5/tesla.jpg);
+}
+
+.card p {
+    z-index: 10;
+}
+
+p.title-card {
+    font-family: 'Poppins';
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: 8rem;
+}
+
+.sub-title-card {
+    color: white;
+    font-size: 35px;
+    font-family: 'Nunito';
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.sub-profile {
+    width: 40%;
+    margin-left: 8rem;
+}
+
+.sub-profile h1 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    border-bottom: 2px solid #333;
+}
+
+.sub-profile p {
+    font-family: 'Nunito';
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#profile img {
+    width: 30%;
+    margin-left: 10rem;
+    border-radius: 30px;
+    border: 4px solid bisque;
+}
+
+footer {
+    background: #222;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Nunito';
+}
+
+@media(max-width: 900px) {
+    .text {
+        margin-top: 80px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .text a {
+        font-size: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header img {
+        padding: 1rem;
+        width: 40rem;
+    }
+}
